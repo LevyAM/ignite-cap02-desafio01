@@ -14,8 +14,8 @@ class TurnUserAdminUseCase {
     if (!user) {
       throw new Error("User does not exists");
     }
-    this.usersRepository.turnAdmin(user);
-    return user;
+
+    return this.usersRepository.turnAdmin(user);
   }
 }
 
