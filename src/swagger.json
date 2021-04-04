@@ -187,7 +187,6 @@
           }
         }
       }
-      
     },
     "/users/{user_id}": {
       "get": {
@@ -264,9 +263,9 @@
         }
       }
     },
-    "/user/{user_id}/admin":{
-      "patch":{
-        "tags":["users"],
+    "/user/{user_id}/admin": {
+      "patch": {
+        "tags": ["users"],
         "summary": "Torna admin um usuário",
         "parameters": [
           {
@@ -280,7 +279,8 @@
               "format": "uuid"
             }
           }
-        ],"responses": {
+        ],
+        "responses": {
           "200": {
             "description": "Operação realizada com sucesso.",
             "content": {
@@ -341,7 +341,6 @@
             }
           }
         }
-        
       }
     }
   }
